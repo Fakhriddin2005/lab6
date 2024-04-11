@@ -33,24 +33,3 @@ def erudit():
                 d+=k
     print('Ваши очки в игре эрудит: ' , d)
 erudit()
-
-def lang():
-    students = {
-    "Alice": ["English", "Spanish", "French"],
-    "Bob": ["English", "Chinese"],
-    "Charlie": ["German", "Chinese", "Japanese"],
-    "David": ["English", "French"]
-}
-    languages = set()
-    for student, langlist in students.items():
-      for lang in langlist:
-        languages.add(lang)
-    sortedlanguages = sorted(list(languages))
-    print("Список различных языков, которые знают студенты:")
-    for lang in sortedlanguages:
-     print(lang)
-    print("\nСтуденты, которые знают китайский язык:")
-    for student, langlist in students.items():
-     if "Chinese" in langlist:
-        print(student)
-lang()
